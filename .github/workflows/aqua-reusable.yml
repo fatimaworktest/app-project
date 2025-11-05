@@ -10,5 +10,5 @@ jobs:
       AQUA_SECRET: ${{ secrets.AQUA_SECRET }}
     with:
       scan_path: "."
-      override_repository: "${{ github.repository }}"                 # your-org/app-one (or app-two)
+      override_repository: "${{ github.repository }}"               
       override_repository_url: "https://github.com/${{ github.repository }}"
