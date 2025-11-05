@@ -1,0 +1,11 @@
+name: App Project Pipeline
+on:
+  push:
+  pull_request:
+
+jobs:
+  use-template:
+    uses: fatimaworktest/ci-pipeline-template/.github/workflows/pipeline-template.yml@main
+    secrets:
+      AQUA_KEY: ${{ secrets.AQUA_KEY }}
+      AQUA_SECRET: ${{ secrets.AQUA_SECRET }}
